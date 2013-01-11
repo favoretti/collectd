@@ -1,0 +1,23 @@
+Patches applied in the Debian version of :
+
+debian/patches/rrd_filter_path.dpatch (Sebastian Harl <sh@tokkee.org>):
+  Set the path of rrd_filter.px to /usr/lib/collectd/utils/.
+
+debian/patches/collection_conf_path.dpatch (Sebastian Harl <sh@tokkee.org>):
+  Set the path of collection.conf to /etc/collectd/.
+
+debian/patches/myplugin_includes.dpatch (Sebastian Harl <sh@tokkee.org>):
+  Let the example plugin include the core headers from
+  /usr/include/collectd/core.
+
+debian/patches/bts559801_plugin_find_fix.dpatch (Sebastian Harl <sh@tokkee.org>):
+  plugin: Use strcasecmp rather than strncasecmp to find a plugin.
+  
+  This makes collectd resistant against vulnerable copies of libltdl
+  (CVE-2009-3736).
+  See <http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=559801#15>
+  for details.
+
+debian/patches/postgresql_writer_memleak.dpatch (Sebastian Harl <sh@tokkee.org>):
+  postgresql plugin: Fixed a memory leak occurring on every write.
+
