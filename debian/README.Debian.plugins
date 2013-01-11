@@ -100,6 +100,9 @@ postgresql:
 python:
  * libpython2.6 (>= 2.6)
 
+redis:
+ * libcredis0
+
 rrdcached:
  * librrd4 (>= 1.4~rc2)
 

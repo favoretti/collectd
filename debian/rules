@@ -77,7 +77,7 @@ confflags += --disable-onewire
 confflags += --disable-oracle
 
 # libcredis is required for the *redis plugins.
-confflags += --disable-redis --disable-write_redis
+confflags += --disable-write_redis
 
 # librouteros is required for the routeros plugin.
 confflags += --disable-routeros
